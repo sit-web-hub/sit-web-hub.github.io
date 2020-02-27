@@ -1,0 +1,297 @@
+{
+  "settings": {
+    "name": "Site-02-15_1558",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise-amp",
+      "title": "Mobirise AMP",
+      "styling": {
+        "primaryColor": "#4ea2e3",
+        "secondaryColor": "#4addff",
+        "successColor": "#0dcd7b",
+        "infoColor": "#8282e7",
+        "warningColor": "#767676",
+        "dangerColor": "#a0a0a0",
+        "mainFont": "Roboto",
+        "display1Font": "Roboto",
+        "display1Size": 4.5,
+        "display2Font": "Roboto",
+        "display2Size": 2.2,
+        "display5Font": "Roboto",
+        "display5Size": 1.8,
+        "display7Font": "Roboto",
+        "display7Size": 1.1,
+        "display4Font": "Roboto",
+        "display4Size": 0.9,
+        "isRoundedButtons": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#4ea2e3"
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.11.6",
+    "siteFonts": [
+      {
+        "css": "'Roboto', sans-serif",
+        "name": "Roboto",
+        "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      }
+    ],
+    "uniqCompNum": 6,
+    "versionPublish": "4.11.6",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "margin-bottom": "1rem"
+            }
+          },
+          "_name": "header4",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full-Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Oben\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Unten\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        \n        <input type=\"checkbox\" title=\"Titel Anzeigen\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text Anzeigen\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons Anzeigen\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Hintergrundbild\" value=\"../_images/background2.jpg\" selected>\n            <input type=\"color\" title=\"Hintergrundfarbe\" value=\"#15181b\"> \n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Mobirise AMP Theme\n        </h1>\n        <h2 class=\"mbr-fonts-style mbr-section-subtitle align-left mbr-black mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">\n            Wir bauen das Netz der Zukunft zusammen\n        </h2>\n        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-black\" href=\"https://mobirise.co\">\n                Jetzt probieren!\n            </a>\n        </div>\n    </div>\n</section>",
+          "_cid": "rQA6Ce94Cu",
+          "_anchor": "header4-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "h1": {
+              "margin-bottom": "20px"
+            },
+            ".wrapper": {
+              "text-align": "center"
+            }
+          },
+          "_name": "social-share",
+          "_customHTML": "<section class=\"social-share\" group=\"Social\" plugins=\"amp-main,amp-social-share\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline=\"\" title=\"Oben\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Unten\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\">\n        <input type=\"checkbox\" title=\"Titel Anzeigen\" name=\"showTitle\" checked=\"\">\n        <input type=\"color\" title=\"Hintergrundfarbe\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"checkbox\" title=\"Email\" name=\"email\" checked=\"\">\n        <input type=\"checkbox\" title=\"Facebook\" name=\"facebook\" checked=\"\">\n        <input type=\"text\" title=\"App Id\" name=\"appId\" condition=\"facebook\" value=\"254325784911610\">\n        <input type=\"checkbox\" title=\"Google+\" name=\"gplus\" checked=\"\">\n        <input type=\"checkbox\" title=\"Linkedin\" name=\"linkedin\" checked=\"\">\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pinterest\" checked=\"\">\n        <input type=\"checkbox\" title=\"Tumblr\" name=\"tumblr\" checked=\"\">\n        <input type=\"checkbox\" title=\"Twitter\" name=\"twitter\" checked=\"\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"wrapper\">\n        <h1 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Teilen Sie diese Seite\n        </h1>\n        <amp-social-share type=\"email\" mbr-if=\"email\"></amp-social-share>\n        <amp-social-share type=\"facebook\" mbr-if=\"facebook\" data-param-app_id=\"{{appId}}\"></amp-social-share>\n        <amp-social-share type=\"gplus\" mbr-if=\"gplus\"></amp-social-share>\n        <amp-social-share type=\"linkedin\" mbr-if=\"linkedin\"></amp-social-share>\n        <amp-social-share type=\"pinterest\" mbr-if=\"pinterest\" data-param-media=\"https://ampbyexample.com/img/amp.jpg\"></amp-social-share>\n        <amp-social-share type=\"tumblr\" mbr-if=\"tumblr\"></amp-social-share>\n        <amp-social-share type=\"twitter\" mbr-if=\"twitter\"></amp-social-share>\n    </div>\n</section>\n",
+          "_cid": "rQA7x3316O",
+          "_anchor": "social-share-5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-title": {
+              "padding-bottom": "1rem"
+            },
+            ".mbr-section-btn": {
+              "padding-top": "1.5rem"
+            }
+          },
+          "_name": "content18",
+          "_customHTML": "<section class=\"mbr-section content18\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Oben\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline=\"\" title=\"Unten\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Titel Anzeigen\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Untertitel Anzeigen\" name=\"showSubtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Buttons Anzeigen\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Hintergrundbild\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Hintergrundfarbe\" value=\"#767676\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-white\" mbr-theme-style=\"display-1\">\n            Artikeltitel mit solidem Hintergrund\n        </h2>\n        <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light  mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\">\n            <i>Gestalten Sie Ihre zukünftigen Web-Projekte mit scharfem Design und verfeinern Sie die codierten Funktionen</i>\n        </h3>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobirise.co\">MEHR INFO</a>\n            <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n        </div>\n    </div>\n</section>\n",
+          "_cid": "rQA6IBBqL8",
+          "_anchor": "content18-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "padding": "2rem 0"
+            }
+          },
+          "_name": "content16",
+          "_customHTML": "<section class=\"content16 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Oben\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Unten\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Hintergrundfarbe\" name=\"bgColor\" value=\"#0dd1ff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-white mbr-bold\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-text\" mbr-text=\"\">\n            <i>Mobirise ist eins der einfachsten Tools für die Website-Entwicklung, die es heute gibt. Es ermöglicht Ihnen auch so viele Websites zu erstellen, wie Sie möchten und das im Angesicht der Tatsache, dass es eine Desktop-App ist. </i>\n        </div>\n    </div>\n</section>",
+          "_cid": "rQA6JqBXII",
+          "_anchor": "content16-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card": {
+              "margin-bottom": "3rem",
+              "position": "relative",
+              "display": "flex",
+              "-ms-flex-direction": "column",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "word-wrap": "break-word",
+              "@media (min-width: 768px)": {
+                "padding-left": "1.5rem",
+                "padding-right": "1.5rem"
+              },
+              ".card-wrapper": {
+                "position": "relative",
+                "border": "1px solid #ededed",
+                "background-color": "@cardBg",
+                "padding": "2rem 3rem 1rem",
+                "margin-bottom": "1rem",
+                "&:before": {
+                  "-webkit-transform": "rotate(45deg)",
+                  "transform": "rotate(45deg)",
+                  "width": "14px",
+                  "height": "14px",
+                  "background-color": "@cardBg",
+                  "border-color": "#ededed",
+                  "border-style": "none solid solid none",
+                  "border-width": "0 1px 1px 0",
+                  "bottom": "-8px",
+                  "content": "\"\"",
+                  "display": "block",
+                  "left": "50px",
+                  "position": "absolute"
+                }
+              },
+              ".signature": {
+                "padding": "0 1rem",
+                ".author-name": {
+                  "padding": ".5rem 0"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "margin-bottom": "30px",
+                ".card-wrapper": {
+                  "padding": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#232323"
+            },
+            ".mbr-section-title when (@showTitle)": {
+              "padding-bottom": "2rem"
+            },
+            "@media (max-width: 767px)": {
+              ".author-name, .author-title": {
+                "text-align": "left"
+              }
+            },
+            "@media (min-width: 768px)": {
+              ".mbr-row": {
+                "margin-left": "-1.5rem",
+                "margin-right": "-1.5rem"
+              }
+            }
+          },
+          "_name": "testimonials1",
+          "_customHTML": "<section class=\"testimonials1 mbr-section\" group=\"Testimonials &amp; Teams\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Oben\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline=\"\" title=\"Unten\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Titel Anzeigen\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Autornamen Anzeigen\" name=\"showAuthorName\" checked=\"\">\n        <input type=\"checkbox\" title=\"Autortitel Anzeigen\" name=\"showAuthorTitle\" checked=\"\">\n        <select title=\"Karten\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected=\"\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"color\" title=\"Karten-HG-Farbe\" name=\"cardBg\" value=\"#efefef\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Hintergrundbild\" value=\"../_images/background6.jpg\">\n            <input type=\"color\" title=\"Hintergrundfarbe\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12\" mbr-if=\"showTitle\">\n                <h2 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">\n                    What Our Fantastic Users Say\n                </h2>\n            </div>\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount >= 3}\">\n                <div class=\"card-wrapper\">\n                    <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum. Quasi optio repellat aliquid odio obcaecati amet odit? Laboriosam, quibusdam autem fugit accusantium!\n                    </p>\n                </div>\n                <div class=\"signature\" mbr-if=\"showAuthorTitle || showAuthorName\">\n                    <div class=\"author-name mbr-fonts-style align-left mbr-bold\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorName\" data-app-selector=\".author-name\">\n                        Matthias Baum\n                    </div>\n                    <div class=\"author-title mbr-fonts-style align-left\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorTitle\" data-app-selector=\".author-title\">\n                        Kunde\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount >= 3}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum. Quasi optio repellat aliquid odio obcaecati amet odit? Laboriosam, quibusdam autem fugit accusantium!\n                    </p>\n                </div>\n                <div class=\"signature\" mbr-if=\"showAuthorTitle || showAuthorName\">\n                    <div class=\"author-name mbr-fonts-style align-left mbr-bold\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorName\" data-app-selector=\".author-name\">\n                        Matthias Baum\n                    </div>\n                    <div class=\"author-title mbr-fonts-style align-left\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorTitle\" data-app-selector=\".author-title\">\n                        Kunde\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount >= 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum. Quasi optio repellat aliquid odio obcaecati amet odit? Laboriosam, quibusdam autem fugit accusantium!\n                    </p>\n                </div>\n                <div class=\"signature\" mbr-if=\"showAuthorTitle || showAuthorName\">\n                    <div class=\"author-name mbr-fonts-style align-left mbr-bold\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorName\" data-app-selector=\".author-name\">\n                        Matthias Baum\n                    </div>\n                    <div class=\"author-title mbr-fonts-style align-left\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorTitle\" data-app-selector=\".author-title\">\n                        Kunde\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount >= 3}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum. Quasi optio repellat aliquid odio obcaecati amet odit? Laboriosam, quibusdam autem fugit accusantium!\n                    </p>\n                </div>\n                <div class=\"signature\" mbr-if=\"showAuthorTitle || showAuthorName\">\n                    <div class=\"author-name mbr-fonts-style align-left mbr-bold\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorName\" data-app-selector=\".author-name\">\n                        Matthias Baum\n                    </div>\n                    <div class=\"author-title mbr-fonts-style align-left\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorTitle\" data-app-selector=\".author-title\">\n                        Kunde\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount >= 3}\" mbr-if=\"cardsAmount > 4\">\n                <div class=\"card-wrapper\">\n                    <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum. Quasi optio repellat aliquid odio obcaecati amet odit? Laboriosam, quibusdam autem fugit accusantium!\n                    </p>\n                </div>\n                <div class=\"signature\" mbr-if=\"showAuthorTitle || showAuthorName\">\n                    <div class=\"author-name mbr-fonts-style align-left mbr-bold\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorName\" data-app-selector=\".author-name\">\n                        Matthias Baum\n                    </div>\n                    <div class=\"author-title mbr-fonts-style align-left\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorTitle\" data-app-selector=\".author-title\">\n                        Kunde\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount >= 3}\" mbr-if=\"cardsAmount > 5\">\n                <div class=\"card-wrapper\">\n                    <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum. Quasi optio repellat aliquid odio obcaecati amet odit? Laboriosam, quibusdam autem fugit accusantium!\n                    </p>\n                </div>\n                <div class=\"signature\" mbr-if=\"showAuthorTitle || showAuthorName\">\n                    <div class=\"author-name mbr-fonts-style align-left mbr-bold\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorName\" data-app-selector=\".author-name\">\n                        Matthias Baum\n                    </div>\n                    <div class=\"author-title mbr-fonts-style align-left\" mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showAuthorTitle\" data-app-selector=\".author-title\">\n                        Kunde\n                    </div>\n                </div>\n            </div>\n            \n        </div>\n    </div>\n</section>",
+          "_cid": "rQA6M7QeG5",
+          "_anchor": "testimonials1-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".ampTabContainer": {
+              "display": "flex",
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".tab-button[selected]": {
+              "outline": "none",
+              "background": "@activeColor"
+            },
+            ".tab-button": {
+              "list-style": "none",
+              "-webkit-flex-grow": "1",
+              "flex-grow": "1",
+              "text-align": "center",
+              "cursor": "pointer"
+            },
+            ".tab-content": {
+              "display": "none",
+              "width": "100%",
+              "order": "1",
+              "border": "1px solid @activeColor",
+              "padding": "2rem 3rem 3rem",
+              "background": "@activeColor",
+              "p": {
+                "margin": "0",
+                "& when (@showTitle)": {
+                  "padding": "2rem 0 0"
+                },
+                "& when not (@showTitle)": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".tab-button[selected] + .tab-content": {
+              "display": "block"
+            },
+            ".tab-head": {
+              "margin": "1rem"
+            }
+          },
+          "_name": "tab1",
+          "_customHTML": "<section class=\"mbr-section tab1\" group=\"Toggles &amp; Tabs\" plugins=\"amp-main, amp-selector\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Oben\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline=\"\" title=\"Unten\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        \n        <input type=\"checkbox\" title=\"Titel Anzeigen\" name=\"showTitle\" checked=\"\">\n        <input type=\"color\" name=\"activeColor\" value=\"#0dd1ff\">\n        <select name=\"tabsAmount\" title=\"Tabs Amount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected=\"\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Hintergrundbild\" value=\"../_images/background6.jpg\" selected=\"\">\n            <input type=\"color\" title=\"Hintergrundfarbe\" value=\"#ffffff\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <amp-selector role=\"tablist\" layout=\"container\" class=\"ampTabContainer\">\n            <div role=\"tab\" class=\"tab-button\" selected=\"\" option=\"a\">\n                <h3 class=\"tab-head mbr-fonts-style mbr-white mbr-light\" mbr-theme-style=\"display-2\">Performance</h3>\n            </div>\n            <div role=\"tabpanel\" class=\"tab-content\">\n                <h2 class=\"mbr-section-title mbr-fonts-style align-center mbr-white mbr-light\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                    HIGHER PERFORMANCE\n                </h2>\n                <p class=\"mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur omnis odit, molestias inventore beatae adipisci fugiat fugit itaque minus explicabo iure deserunt corporis minima vitae dicta et libero sit.</span><span>Nihil cumque aspernatur nam fugiat iusto error, distinctio, dolorum explicabo nobis. Voluptatem dolores, laudantium qui aspernatur recusandae velit, molestiae facilis harum itaque quisquam! Porro dolorem, pariatur rerum ullam dolores non?</span></p>\n            </div>\n\n            <div role=\"tab\" class=\"tab-button\" option=\"b\">\n                <h3 class=\"tab-head mbr-fonts-style mbr-white mbr-light\" mbr-theme-style=\"display-2\">Engagement</h3>\n            </div>\n            <div role=\"tabpanel\" class=\"tab-content\">\n                <h2 class=\"mbr-section-title mbr-fonts-style align-center mbr-white mbr-light\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                    EFFECTIVE ENGAGEMENT\n                </h2>\n                <p class=\"mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur omnis odit, molestias inventore beatae adipisci fugiat fugit itaque minus explicabo iure deserunt corporis minima vitae dicta et libero sit.</span><span>Nihil cumque aspernatur nam fugiat iusto error, distinctio, dolorum explicabo nobis. Voluptatem dolores, laudantium qui aspernatur recusandae velit, molestiae facilis harum itaque quisquam! Porro dolorem, pariatur rerum ullam dolores non?</span>.</p>         \n            </div>\n            <div role=\"tab\" class=\"tab-button\" option=\"c\" mbr-if=\"tabsAmount > 2\">\n                <h3 class=\"tab-head mbr-fonts-style mbr-white mbr-light\" mbr-theme-style=\"display-2\">Flexibilität</h3>\n            </div>\n            <div role=\"tabpanel\" class=\"tab-content\" mbr-if=\"tabsAmount > 2\">\n                <h2 class=\"mbr-section-title mbr-fonts-style align-center mbr-white mbr-light\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">EXCELLENT FLEXIBILITY</h2>\n                <p class=\"mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur omnis odit, molestias inventore beatae adipisci fugiat fugit itaque minus explicabo iure deserunt corporis minima vitae dicta et libero sit.</span><span>Nihil cumque aspernatur nam fugiat iusto error, distinctio, dolorum explicabo nobis. Voluptatem dolores, laudantium qui aspernatur recusandae velit, molestiae facilis harum itaque quisquam! Porro dolorem, pariatur rerum ullam dolores non?</span></p>\n            </div>\n            <div role=\"tab\" class=\"tab-button\" option=\"d\" mbr-if=\"tabsAmount > 3\">\n                <h3 class=\"tab-head mbr-fonts-style mbr-white mbr-light\" mbr-theme-style=\"display-2\">Performance</h3>\n            </div>\n            <div role=\"tabpanel\" class=\"tab-content\" mbr-if=\"tabsAmount > 3\">\n                <h2 class=\"mbr-section-title mbr-fonts-style align-center mbr-white mbr-light\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                    EFFECTIVE ENGAGEMENT\n                </h2>\n                <p class=\"mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur omnis odit, molestias inventore beatae adipisci fugiat fugit itaque minus explicabo iure deserunt corporis minima vitae dicta et libero sit.</span><span>Nihil cumque aspernatur nam fugiat iusto error, distinctio, dolorum explicabo nobis. Voluptatem dolores, laudantium qui aspernatur recusandae velit, molestiae facilis harum itaque quisquam! Porro dolorem, pariatur rerum ullam dolores non?</span></p>\n            </div>\n            <div role=\"tab\" class=\"tab-button\" option=\"e\" mbr-if=\"tabsAmount > 4\">\n                <h3 class=\"tab-head mbr-fonts-style mbr-white mbr-light\" mbr-theme-style=\"display-2\">Engagement</h3>\n            </div>\n            <div role=\"tabpanel\" class=\"tab-content\" mbr-if=\"tabsAmount > 4\">\n                <h2 class=\"mbr-section-title mbr-fonts-style align-center mbr-white mbr-light\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                    EFFECTIVE ENGAGEMENT\n                </h2>\n                <p class=\"mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur omnis odit, molestias inventore beatae adipisci fugiat fugit itaque minus explicabo iure deserunt corporis minima vitae dicta et libero sit.</span><span>Nihil cumque aspernatur nam fugiat iusto error, distinctio, dolorum explicabo nobis. Voluptatem dolores, laudantium qui aspernatur recusandae velit, molestiae facilis harum itaque quisquam! Porro dolorem, pariatur rerum ullam dolores non?</span></p>\n            </div>\n            <div role=\"tab\" class=\"tab-button\" option=\"f\" mbr-if=\"tabsAmount > 5\">\n                <h3 class=\"tab-head mbr-fonts-style mbr-white mbr-light\" mbr-theme-style=\"display-2\">Engagement</h3>\n            </div>\n            <div role=\"tabpanel\" class=\"tab-content\" mbr-if=\"tabsAmount > 5\">\n                <h2 class=\"mbr-section-title mbr-fonts-style align-center mbr-white mbr-light\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n                    EFFECTIVE ENGAGEMENT\n                </h2>\n                <p class=\"mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, pariatur omnis odit, molestias inventore beatae adipisci fugiat fugit itaque minus explicabo iure deserunt corporis minima vitae dicta et libero sit.</span><span>Nihil cumque aspernatur nam fugiat iusto error, distinctio, dolorum explicabo nobis. Voluptatem dolores, laudantium qui aspernatur recusandae velit, molestiae facilis harum itaque quisquam! Porro dolorem, pariatur rerum ullam dolores non?</span></p>\n            </div>\n        </amp-selector>\n    </div>\n\n</section>",
+          "_cid": "rQA6OG9L4E",
+          "_anchor": "tab1-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
